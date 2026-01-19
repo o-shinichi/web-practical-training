@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* メインの画像をグリッドの配置にする s */
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:35px;
+}
+/* 画像を一画面に入れる */
+.wrapper ul img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* 両端の空白 */
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* f */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-list{
+    list-style: none;
+}
+
