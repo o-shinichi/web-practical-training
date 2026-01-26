@@ -14,8 +14,9 @@
 }
 /* 両端の空白 */
 body{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: left;
 }
 /* f */
 
@@ -42,4 +43,32 @@ header {
     text-align: center;
     margin-top: 40px;
 }
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
 
+.item .item-text th{
+    text-align: left;
+    text-decoration: none;
+}
+
+/* ここからitemのデザイン */
+.item{
+    display: flex;
+    align-items: stretch;
+    gap: 70px;
+}
+.item p{
+    margin-bottom: 50px;
+    width: 500px;
+}
+.item img{
+    width: 450px;
+    height: 450px;
+    margin: 50px;
+}
+.wrapper .site-title img{
+    margin: 30px;
+}
