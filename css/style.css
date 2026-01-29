@@ -72,36 +72,69 @@ ul{
 .wrapper .site-title img{
     margin: 30px;
 }
-
-@media(max-width:600px){
-.product-list {
-        grid-template-columns: repeat(2, 1fr); /* ③スマホ画面では2列表示にする */
-        gap: 20px;                              /* スマホ用に余白を少し狭くする */
+/* ここからcompanyのデザイン */
+    #company{
+        max-width: 600px;
     }
-      /* スマホ時：プロダクトタイトルを小さく整える */
+    #company .info{
+        width:100%;
+        border-collapse: collapse;
+        /* テーブルの隙間を実践にする */
+        margin-bottom: 20px;
+    }
+    #company .info th,
+    #company .info td{
+        font-weight: normal;
+        border-bottom: 1px solid gray;
+        padding: 20px 10px;
+    }
+    /* 左の項目 */
+    #company .info th{
+        width: 30%;
+        text-align: left;
+    }
+    /* 右の項目 */
+    #company .info td{
+        width: 70%;
+    }
+    /* 最後の行だけ下線を消す */
+    #company .info tr:last-child th,
+    #company .info tr:last-child td{
+        border-bottom: none;
+    }
+    /* Google Map */
+    #company .map{
+        filter: grayscale(100%);
+    }
+    
+/* レスポンシブ対応デザイン */
+@media (max-width: 600px){
+    .product-list {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
     .product-list p {
-        font-size: 0.8rem;    
-        /* ⑤タイトル文字をスマホ用に少し小さくする */
-        line-height: 1.4;      
-        /* 2行になっても読みやすい行間にする */
-        margin-top: 6px;      
-        /* 画像との間隔を詰める */
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-top: 6px;
     }
-    /* ロゴ画像のサイズを小さくする */
-    .site-title img {
-        height: 24px;  
-        /* ⑥ロゴの高さを指定（数値を小さくするとさらに小さくなる） */
-        width: auto;    
-        /* 縦横比を保ったまま縮小する */
+    .site-title img{
+        height: 24px;
+        width: auto;
+        /* margin-left: 20px; */
     }
-}
+    nav {
+        margin-right: 20px;
+    }
+
     /* ◆◆◆ここからitemのデザイン◆◆◆ */
     .item {
         flex-direction: column;
     }
     .item .item-img,
-    .item .item-text{
+    .item .item-text {
         width: 100%;
     }
-    /* ◆◆◆ここまでitemのデザイン◆◆◆ */
-
+}
+ 
+    
