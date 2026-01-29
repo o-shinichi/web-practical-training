@@ -13,11 +13,13 @@
     display: block;
 }
 /* 両端の空白 */
-body{
-    margin-left: 150px;
-    margin-right: 150px;
-    align-items: left;
+.wrapper{
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px ;
 }
+
 /* f */
 
 header {
@@ -106,7 +108,7 @@ ul{
     #company .map{
         filter: grayscale(100%);
     }
-    
+
 /* レスポンシブ対応デザイン */
 @media (max-width: 600px){
     .product-list {
